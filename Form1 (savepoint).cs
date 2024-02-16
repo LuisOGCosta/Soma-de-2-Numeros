@@ -21,21 +21,21 @@ namespace Soma2Numeros
         {
             //Variaveis
 
-            int n1, n2, total;
+            int n1, n2, n3, total;
 
             //Entrada de Dados
 
             n1 = int.Parse(TxtNumero1.Text);
             n2 = int.Parse(TxtNumero2.Text);
+            n3 = int.Parse(TxtNumero3.Text);
 
             //processamento
 
-            total = n1 + n2;
+            total = n1 + n2 + n3;
 
             // Saidas de Dados
 
             LblTotal.Text = total.ToString();
-            TxtTotal.Text = total.ToString();
         }
 
         private void label3_Click(object sender, EventArgs e)
