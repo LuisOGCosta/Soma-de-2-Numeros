@@ -38,6 +38,8 @@
             this.lbl3 = new System.Windows.Forms.Label();
             this.TxtNumero3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblMedia = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -138,12 +140,34 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "A soma de todos os Números Inteiros foram:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 210);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "A medía dos numeros são:";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
+            // 
+            // lblMedia
+            // 
+            this.lblMedia.BackColor = System.Drawing.Color.Lime;
+            this.lblMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblMedia.Location = new System.Drawing.Point(149, 201);
+            this.lblMedia.Name = "lblMedia";
+            this.lblMedia.Size = new System.Drawing.Size(23, 25);
+            this.lblMedia.TabIndex = 14;
+            this.lblMedia.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(303, 310);
+            this.Controls.Add(this.lblMedia);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtNumero3);
             this.Controls.Add(this.lbl3);
@@ -173,6 +197,8 @@
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.TextBox TxtNumero3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMedia;
     }
 }
 

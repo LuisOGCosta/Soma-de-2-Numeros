@@ -21,7 +21,7 @@ namespace Soma2Numeros
         {
             //Variaveis
 
-            int n1, n2, n3, total;
+            int n1, n2, n3, total, media;
 
             //Entrada de Dados
 
@@ -36,6 +36,16 @@ namespace Soma2Numeros
             // Saidas de Dados
 
             LblTotal.Text = total.ToString();
+
+            //Calculando Medía
+
+            media = (n1 + n2 + n3) / 3;
+
+            //Processamento d Medía
+
+            lblMedia.Text = media.ToString();
+
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -44,6 +54,11 @@ namespace Soma2Numeros
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
         {
 
         }
